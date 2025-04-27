@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación - Isla de Jeju</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <script>
+        function evaluar() {
+            var puntos = 0;
+            if (document.getElementById('p1c').checked) puntos++;
+            if (document.getElementById('p2b').checked) puntos++;
+            if (document.getElementById('p3a').checked) puntos++;
+            if (document.getElementById('p4c').checked) puntos++;
+            if (document.getElementById('p5b').checked) puntos++;
+
+            alert("Tu nota es: " + (puntos * 2) + "/10");
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Evaluación: Conocimientos sobre la Isla de Jeju</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Historia.html">Historia</a></li>
+            <li><a href="Atracciones.html">Atracciones</a></li>
+            <li><a href="Evaluacion.html">Evaluación</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Formulario de Evaluación</h2>
+        <form>
+
+            <p>1. ¿En qué país se encuentra la Isla de Jeju?</p>
+            <input type="radio" name="p1" id="p1a"> Japón<br>
+            <input type="radio" name="p1" id="p1b"> China<br>
+            <input type="radio" name="p1" id="p1c"> Corea del Sur<br>
+
+            <p>2. ¿Qué reconocimiento internacional tiene Jeju?</p>
+            <input type="radio" name="p2" id="p2a"> Sitio histórico<br>
+            <input type="radio" name="p2" id="p2b"> Patrimonio Natural de la Humanidad<br>
+            <input type="radio" name="p2" id="p2c"> Reserva de la Biosfera<br>
+
+            <p>3. ¿Cómo se llama el volcán más alto de la isla?</p>
+            <input type="radio" name="p3" id="p3a"> Monte Halla<br>
+            <input type="radio" name="p3" id="p3b"> Monte Fuji<br>
+            <input type="radio" name="p3" id="p3c"> Monte Everest<br>
+
+            <p>4. ¿Qué actividad realizan las Haenyeo?</p>
+            <input type="radio" name="p4" id="p4a"> Pesca de tiburones<br>
+            <input type="radio" name="p4" id="p4b"> Cultivo de arroz<br>
+            <input type="radio" name="p4" id="p4c"> Buceo en busca de mariscos<br>
+
+            <p>5. ¿Qué formación natural es famosa para ver el amanecer en Jeju?</p>
+            <input type="radio" name="p5" id="p5a"> Manjanggul<br>
+            <input type="radio" name="p5" id="p5b"> Seongsan Ilchulbong<br>
+            <input type="radio" name="p5" id="p5c"> Lago Volcánico<br>
+
+            <br><br>
+            <button type="button" onclick="evaluar()">Enviar Evaluación</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Ariel Flores - Universidad Politécnica Salesiana</p>
+    </footer>
+</body>
+</html>
